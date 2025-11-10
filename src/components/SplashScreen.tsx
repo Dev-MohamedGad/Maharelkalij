@@ -77,12 +77,12 @@ const SplashScreen = ({ onComplete }: SplashScreenProps) => {
           <div className="flex items-center justify-center gap-2 mb-4">
             <Waves className="w-6 h-6 text-accent" />
             <motion.p
-              className="text-xl md:text-2xl text-white/90 font-medium"
+              className="text-lg md:text-xl text-white/90 font-medium"
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ delay: 0.7, duration: 0.8 }}
             >
-              Maharel Kalij
+              بيع الاسماك بالجملة والتجزئة
             </motion.p>
             <Waves className="w-6 h-6 text-accent" />
           </div>

@@ -16,7 +16,7 @@ const videoItems: VideoItem[] = [
   { id: 1, src: videoDash1, title: "فيديو المأكولات البحرية" },
   { id: 2, src: videoDash2, title: "فيديو الطهي الاحترافي" },
   { id: 3, src: videoDash3, title: "فيديو المأكولات البحرية" },
-]
+];
 const VideoSection = () => {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true, amount: 0.2 });
@@ -52,11 +52,11 @@ const VideoSection = () => {
           className="text-center mb-12"
         >
           <h2 className="text-4xl md:text-5xl font-bold text-primary mb-4">
-            فيديوهات من مطبخنا
+            فيديوهات لانواع الاسماك
           </h2>
           <div className="w-20 h-1 bg-accent mx-auto rounded-full" />
           <p className="mt-6 text-muted-foreground text-lg">
-            شاهد كيف نعد أشهى المأكولات البحرية
+            شاهد اعلي جودة من الاسماك الطازجة
           </p>
         </motion.div>
 
