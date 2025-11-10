@@ -14,7 +14,7 @@ type VideoItem = {
 
 const videoItems: VideoItem[] = [
   { id: 1, src: videoDash1, title: "فيديو المأكولات البحرية" },
-  { id: 2, src: videoDash2, title: "فيديو الطهي الاحترافي" },
+  { id: 2, src: videoDash2, title: "فيديو المأكولات البحرية" },
   { id: 3, src: videoDash3, title: "فيديو المأكولات البحرية" },
 ];
 const VideoSection = () => {

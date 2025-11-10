@@ -2,16 +2,9 @@ import { motion, AnimatePresence } from "framer-motion";
 import { useInView } from "framer-motion";
 import { useRef, useState } from "react";
 import { X, ZoomIn, ChevronRight, ChevronLeft } from "lucide-react";
-import image1 from "@/assets/image-1.jpeg";
 import image2 from "@/assets/image-2.jpeg";
-import image3 from "@/assets/image-3.jpeg";
-import image4 from "@/assets/image-4.jpeg";
 import image5 from "@/assets/image-5.jpeg";
-import image6 from "@/assets/image-6.jpeg";
-import image7 from "@/assets/image-7.jpeg";
 import image8 from "@/assets/image-8.jpeg";
-import image9 from "@/assets/image-9.jpeg";
-import image10 from "@/assets/image-10.jpeg";
 import image11 from "@/assets/image-11.jpeg";
 import image12 from "@/assets/image-12.jpeg";
 import image13 from "@/assets/image-13.jpeg";
@@ -24,7 +17,6 @@ import image19 from "@/assets/image-19.jpeg";
 import image20 from "@/assets/image-20.jpeg";
 import image21 from "@/assets/image-21.jpeg";
 import image22 from "@/assets/image-22.jpeg";
-import image23 from "@/assets/image-23.jpeg";
 import image25 from "@/assets/image-25.jpeg";
 import image26 from "@/assets/image-26.jpeg";
 import image27 from "@/assets/image-27.jpeg";
@@ -37,33 +29,25 @@ type ImageItem = {
 };
 
 const galleryImages: ImageItem[] = [
-  { id: 1, src: image1, alt: "أسماك الخليج الطازجة" },
-  { id: 2, src: image2, alt: "سمك هامور طازج" },
-  { id: 3, src: image3, alt: "جمبري طازج" },
-  { id: 4, src: image4, alt: "مشكل الأسماك الطازجة" },
-  { id: 5, src: image5, alt: "سمك كنعد طازج" },
-  { id: 6, src: image6, alt: "جمبري وأسماك طازجة" },
-  { id: 7, src: image7, alt: "سمك شعري طازج" },
-  { id: 8, src: image8, alt: "سمك كنعد طازج" },
-  { id: 9, src: image9, alt: "مشكل المأكولات البحرية" },
-  { id: 10, src: image10, alt: "أسماك الخليج المميزة" },
-  { id: 11, src: image11, alt: "أسماك طازجة من الخليج" },
-  { id: 12, src: image12, alt: "مأكولات بحرية شهية" },
-  { id: 13, src: image13, alt: "أطباق بحرية متنوعة" },
-  { id: 14, src: image14, alt: "مأكولات بحرية طازجة" },
-  { id: 15, src: image15, alt: "أسماك الخليج" },
-  { id: 16, src: image16, alt: "مأكولات بحرية فاخرة" },
-  { id: 17, src: image17, alt: "طبق بحري مميز" },
-  { id: 18, src: image18, alt: "مأكولات بحرية طازجة" },
-  { id: 19, src: image19, alt: "أسماك طازجة" },
-  { id: 20, src: image20, alt: "مأكولات بحرية متنوعة" },
-  { id: 21, src: image21, alt: "أطباق بحرية شهية" },
-  { id: 22, src: image22, alt: "مأكولات بحرية طازجة" },
-  { id: 23, src: image23, alt: "أسماك الخليج" },
-  { id: 24, src: image25, alt: "مأكولات بحرية فاخرة" },
-  { id: 25, src: image26, alt: "طبق بحري مميز" },
-  { id: 26, src: image27, alt: "مأكولات بحرية طازجة" },
-  { id: 27, src: image28, alt: "عرض المأكولات البحرية" },
+  { id: 1, src: image2, alt: "أسماك الخليج الطازجة" },
+  { id: 2, src: image5, alt: "مأكولات بحرية فاخرة" },
+  { id: 3, src: image8, alt: "جمبري الخليج الطازج" },
+  { id: 4, src: image11, alt: "أسماك طازجة من الخليج" },
+  { id: 5, src: image12, alt: "مأكولات بحرية شهية" },
+  { id: 6, src: image13, alt: "أطباق بحرية متنوعة" },
+  { id: 7, src: image14, alt: "مأكولات بحرية طازجة" },
+  { id: 8, src: image15, alt: "أسماك الخليج" },
+  { id: 9, src: image16, alt: "مأكولات بحرية فاخرة" },
+  { id: 10, src: image17, alt: "طبق بحري مميز" },
+  { id: 11, src: image18, alt: "مأكولات بحرية طازجة" },
+  { id: 12, src: image19, alt: "أسماك طازجة" },
+  { id: 13, src: image20, alt: "مأكولات بحرية متنوعة" },
+  { id: 14, src: image21, alt: "أطباق بحرية شهية" },
+  { id: 15, src: image22, alt: "مأكولات بحرية طازجة" },
+  { id: 16, src: image25, alt: "مأكولات بحرية فاخرة" },
+  { id: 17, src: image26, alt: "طبق بحري مميز" },
+  { id: 18, src: image27, alt: "مأكولات بحرية طازجة" },
+  { id: 19, src: image28, alt: "عرض المأكولات البحرية" },
 ];
 
 const GallerySection = () => {
@@ -134,7 +118,52 @@ const GallerySection = () => {
             </p>
           </motion.div>
 
-        
+          {/* Gallery Grid */}
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 md:gap-6 max-w-7xl mx-auto">
+            {galleryImages.map((image, index) => (
+              <motion.div
+                key={image.id}
+                initial={{ opacity: 0, y: 50, scale: 0.9 }}
+                animate={isInView ? { opacity: 1, y: 0, scale: 1 } : {}}
+                transition={{
+                  duration: 0.6,
+                  delay: index * 0.05,
+                  ease: [0.25, 0.46, 0.45, 0.94],
+                }}
+                className="group relative overflow-hidden rounded-2xl cursor-pointer aspect-square"
+                onClick={() => openLightbox(image.id)}
+              >
+                {/* Image */}
+                <div className="relative w-full h-full">
+                  <img
+                    src={image.src}
+                    alt={image.alt}
+                    className="w-full h-full object-cover transition-all duration-700 group-hover:scale-110"
+                    loading="lazy"
+                  />
+                  
+                  {/* Gradient Overlay */}
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+                  
+                  {/* Shine Effect */}
+                  <div className="absolute inset-0 -translate-x-full group-hover:translate-x-full transition-transform duration-1000 bg-gradient-to-r from-transparent via-white/20 to-transparent" />
+                  
+                  {/* Content Overlay (icon only, no title) */}
+                  <div className="absolute inset-0 flex items-end justify-center p-6 opacity-0 group-hover:opacity-100 transition-all duration-500 transform translate-y-4 group-hover:translate-y-0">
+                    <div className="p-2 bg-white/20 backdrop-blur-md rounded-full">
+                      <ZoomIn className="w-5 h-5 text-white" />
+                    </div>
+                  </div>
+
+                  {/* Corner Accent */}
+                  <div className="absolute top-0 right-0 w-20 h-20 bg-gradient-to-br from-secondary/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+                </div>
+
+                {/* Border Glow Effect */}
+                <div className="absolute inset-0 rounded-2xl border-2 border-transparent group-hover:border-secondary/50 transition-all duration-500 shadow-[0_0_30px_rgba(0,195,255,0.3)] opacity-0 group-hover:opacity-100" />
+              </motion.div>
+            ))}
+          </div>
         </div>
       </section>
 
@@ -197,11 +226,7 @@ const GallerySection = () => {
                       alt={image.alt}
                       className="w-full h-full object-contain rounded-2xl shadow-2xl"
                     />
-                    <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 to-transparent p-6 rounded-b-2xl">
-                      <p className="text-white font-bold text-xl text-center">
-                        {image.alt}
-                      </p>
-                    </div>
+                    {/* No caption/title in lightbox */}
                   </div>
                 ))}
             </motion.div>

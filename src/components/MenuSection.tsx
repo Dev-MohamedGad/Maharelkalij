@@ -8,7 +8,6 @@ import image4 from "@/assets/image-4.jpeg";
 import image23 from "@/assets/image-23.jpeg";
 import image6 from "@/assets/image-6.jpeg";
 import image7 from "@/assets/image-7.jpeg";
-import image8 from "@/assets/image-8.jpeg";
 import image30 from "@/assets/image-30.jpeg";
 import image9 from "@/assets/image-9.jpeg";
 import image10 from "@/assets/image-10.jpeg";
