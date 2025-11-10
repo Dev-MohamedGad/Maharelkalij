@@ -2,16 +2,33 @@ import { motion } from "framer-motion";
 import { useInView } from "framer-motion";
 import { useRef } from "react";
 import { Image as ImageIcon } from "lucide-react";
-import imageFood1 from "@/assets/image-food.jpeg";
-import imageFood2 from "@/assets/image-food-2.jpeg";
-import imageFood3 from "@/assets/image-food-3.jpeg";
-import imageFood4 from "@/assets/image-food-4.jpeg";
-import imageFood5 from "@/assets/image-food-5.jpeg";
-import imageFood6 from "@/assets/image-food-6.jpeg";
-import imageFood7 from "@/assets/image-food-7.jpeg";
-import imageFood8 from "@/assets/image-food-8.jpeg";
-import imageFood9 from "@/assets/image-food-9.jpeg";
-import imageFood10 from "@/assets/image-food-10.jpeg";
+import image1 from "@/assets/image-1.jpeg";
+import image2 from "@/assets/image-2.jpeg";
+import image3 from "@/assets/image-3.jpeg";
+import image4 from "@/assets/image-4.jpeg";
+import image5 from "@/assets/image-5.jpeg";
+import image6 from "@/assets/image-6.jpeg";
+import image7 from "@/assets/image-7.jpeg";
+import image8 from "@/assets/image-8.jpeg";
+import image9 from "@/assets/image-9.jpeg";
+import image10 from "@/assets/image-10.jpeg";
+import image11 from "@/assets/image-11.jpeg";
+import image12 from "@/assets/image-12.jpeg";
+import image13 from "@/assets/image-13.jpeg";
+import image14 from "@/assets/image-14.jpeg";
+import image15 from "@/assets/image-15.jpeg";
+import image16 from "@/assets/image-16.jpeg";
+import image17 from "@/assets/image-17.jpeg";
+import image18 from "@/assets/image-18.jpeg";
+import image19 from "@/assets/image-19.jpeg";
+import image20 from "@/assets/image-20.jpeg";
+import image21 from "@/assets/image-21.jpeg";
+import image22 from "@/assets/image-22.jpeg";
+import image23 from "@/assets/image-23.jpeg";
+import image25 from "@/assets/image-25.jpeg";
+import image26 from "@/assets/image-26.jpeg";
+import image27 from "@/assets/image-27.jpeg";
+import image28 from "@/assets/image-28.jpeg";
 
 type ImageItem = {
   id: number;
@@ -20,16 +37,33 @@ type ImageItem = {
 };
 
 const galleryImages: ImageItem[] = [
-  { id: 1, src: imageFood1, alt: "مأكولات بحرية طازجة" },
-  { id: 2, src: imageFood2, alt: "سمك مشوي" },
-  { id: 3, src: imageFood3, alt: "جمبري مقلي" },
-  { id: 4, src: imageFood4, alt: "أرز بالمأكولات البحرية" },
-  { id: 5, src: imageFood5, alt: "مأكولات بحرية فاخرة" },
-  { id: 6, src: imageFood6, alt: "سمك طازج" },
-  { id: 7, src: imageFood7, alt: "مأكولات بحرية متنوعة" },
-  { id: 8, src: imageFood8, alt: "طبق بحري شهي" },
-  { id: 9, src: imageFood9, alt: "مأكولات بحرية طازجة" },
-  { id: 10, src: imageFood10, alt: "عرض المأكولات" },
+  { id: 1, src: image1, alt: "مأكولات بحرية طازجة" },
+  { id: 2, src: image2, alt: "سمك مشوي" },
+  { id: 3, src: image3, alt: "جمبري مقلي" },
+  { id: 4, src: image4, alt: "أرز بالمأكولات البحرية" },
+  { id: 5, src: image5, alt: "مأكولات بحرية فاخرة" },
+  { id: 6, src: image6, alt: "سمك طازج" },
+  { id: 7, src: image7, alt: "مأكولات بحرية متنوعة" },
+  { id: 8, src: image8, alt: "طبق بحري شهي" },
+  { id: 9, src: image9, alt: "مأكولات بحرية طازجة" },
+  { id: 10, src: image10, alt: "عرض المأكولات" },
+  { id: 11, src: image11, alt: "سمك مشوي على الفحم" },
+  { id: 12, src: image12, alt: "مأكولات بحرية شهية" },
+  { id: 13, src: image13, alt: "أطباق بحرية متنوعة" },
+  { id: 14, src: image14, alt: "مأكولات بحرية طازجة" },
+  { id: 15, src: image15, alt: "سمك مشوي مع الخضار" },
+  { id: 16, src: image16, alt: "مأكولات بحرية فاخرة" },
+  { id: 17, src: image17, alt: "طبق بحري مميز" },
+  { id: 18, src: image18, alt: "مأكولات بحرية طازجة" },
+  { id: 19, src: image19, alt: "سمك طازج مشوي" },
+  { id: 20, src: image20, alt: "مأكولات بحرية متنوعة" },
+  { id: 21, src: image21, alt: "أطباق بحرية شهية" },
+  { id: 22, src: image22, alt: "مأكولات بحرية طازجة" },
+  { id: 23, src: image23, alt: "سمك مشوي على الفحم" },
+  { id: 24, src: image25, alt: "مأكولات بحرية فاخرة" },
+  { id: 25, src: image26, alt: "طبق بحري مميز" },
+  { id: 26, src: image27, alt: "مأكولات بحرية طازجة" },
+  { id: 27, src: image28, alt: "عرض المأكولات البحرية" },
 ];
 
 const GallerySection = () => {
@@ -50,7 +84,7 @@ const GallerySection = () => {
           </h2>
           <div className="w-20 h-1 bg-accent mx-auto rounded-full" />
           <p className="mt-6 text-muted-foreground text-lg">
-            جولة بصرية في عالم نجمة السمك
+            جولة بصرية في عالم مؤسسة محار الخليج
           </p>
         </motion.div>
 

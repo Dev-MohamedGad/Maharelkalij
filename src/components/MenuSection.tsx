@@ -2,41 +2,77 @@ import { motion } from "framer-motion";
 import { useInView } from "framer-motion";
 import { useRef } from "react";
 import { Card, CardContent } from "@/components/ui/card";
-import grilledFish from "@/assets/grilled-fish.jpg";
-import grilledFish2 from "@/assets/grilled-fish-2.jpg";
-import friedShrimp from "@/assets/fried-shrimp.jpg";
-import seafoodRice from "@/assets/seafood-rice.jpg";
+import image1 from "@/assets/image-1.jpeg";
+import image2 from "@/assets/image-2.jpeg";
+import image3 from "@/assets/image-3.jpeg";
+import image4 from "@/assets/image-4.jpeg";
+import image5 from "@/assets/image-5.jpeg";
+import image6 from "@/assets/image-6.jpeg";
+import image7 from "@/assets/image-7.jpeg";
+import image8 from "@/assets/image-8.jpeg";
+import image9 from "@/assets/image-9.jpeg";
+import image10 from "@/assets/image-10.jpeg";
 
 const menuItems = [
   {
     id: 1,
-    name: "سمك مشوي",
-    description: "سمك طازج مشوي على الفحم مع الليمون والأعشاب",
-    image: grilledFish2,
+    name: "أسماك الخليج الطازجة",
+    description: "أسماك طازجة من مياه الخليج العربي، منتقاة بعناية من أفضل المصادر",
+    image: image1,
   },
   {
     id: 2,
-    name: "أرز بالمأكولات البحرية",
-    description: "أرز بسمتي مع خلطة مميزة من المأكولات البحرية",
-    image: seafoodRice,
+    name: "سمك هامور طازج",
+    description: "سمك هامور طازج من الخليج، يتميز بجودته العالية وطعمه المميز",
+    image: image2,
   },
   {
     id: 3,
-    name: "سمك سلمون مشوي",
-    description: "شرائح سلمون طازجة مشوية بصوص خاص",
-    image: grilledFish,
+    name: "جمبري الخليج الكبير",
+    description: "جمبري الخليج الكبير طازج، منتقى من أفضل الأنواع المتوفرة",
+    image: image3,
   },
   {
     id: 4,
-    name: "أزر بالروبيان",
-    description: "أرز بالروبيان الطازج والتوابل الشرقية",
-    image: seafoodRice,
+    name: "مشكل الأسماك الطازجة",
+    description: "تشكيلة مميزة من أفضل أنواع الأسماك الطازجة من مياه الخليج",
+    image: image4,
   },
   {
     id: 5,
-    name: "حبار مقلي",
-    description: "حلقات حبار مقرمشة مع صوص التارتار",
-    image: friedShrimp,
+    name: "سمك صافي طازج",
+    description: "سمك صافي طازج من الخليج، يتميز بنضارته وجودته العالية",
+    image: image5,
+  },
+  {
+    id: 6,
+    name: "جمبري وأسماك طازجة",
+    description: "جمبري طازج وأسماك الخليج، منتقاة بعناية من أفضل المصادر",
+    image: image6,
+  },
+  {
+    id: 7,
+    name: "سمك شعري طازج",
+    description: "سمك شعري طازج من مياه الخليج، يتميز بجودته العالية وطعمه المميز",
+    image: image7,
+  },
+  {
+    id: 8,
+    name: "سمك كنعد طازج",
+    description: "سمك كنعد طازج من الخليج، منتقى من أفضل الأنواع المتوفرة",
+    image: image8,
+  },
+  {
+    id: 9,
+    name: "مشكل المأكولات البحرية",
+    description: "تشكيلة واسعة من أفضل المأكولات البحرية الطازجة من الخليج",
+    image: image9,
+  },
+  {
+    id: 10,
+    name: "أسماك الخليج المميزة",
+    description: "أسماك الخليج الطازجة، منتقاة بعناية من أفضل المصادر بجودة عالية",
+    image: image10,
   },
 ];
 
@@ -54,11 +90,11 @@ const MenuSection = () => {
           className="text-center mb-12"
         >
           <h2 className="text-4xl md:text-5xl font-bold text-primary mb-4">
-            قائمة المأكولات
+            منتجاتنا البحرية
           </h2>
           <div className="w-20 h-1 bg-accent mx-auto rounded-full" />
           <p className="mt-6 text-muted-foreground text-lg">
-            اختر من تشكيلتنا الواسعة من المأكولات البحرية الشهية
+            تشكيلة واسعة من المأكولات البحرية الطازجة من الخليج
           </p>
         </motion.div>
 

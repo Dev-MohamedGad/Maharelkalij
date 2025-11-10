@@ -57,7 +57,7 @@ const SplashScreen = ({ onComplete }: SplashScreenProps) => {
         {/* Logo */}
         <motion.img
           src={logo}
-          alt="نجمة السمك"
+          alt="مؤسسة محار الخليج"
           className="w-32 h-32 md:w-40 md:h-40 rounded-full object-cover mb-8 shadow-2xl"
           initial={{ scale: 0, rotate: -180 }}
           animate={{ scale: 1, rotate: 0 }}
@@ -72,7 +72,7 @@ const SplashScreen = ({ onComplete }: SplashScreenProps) => {
           transition={{ delay: 0.4, duration: 0.8 }}
         >
           <h1 className="text-5xl md:text-6xl font-bold text-white mb-3 drop-shadow-lg">
-            نجمة السمك
+            مؤسسة محار الخليج
           </h1>
           <div className="flex items-center justify-center gap-2 mb-4">
             <Waves className="w-6 h-6 text-accent" />
@@ -82,7 +82,7 @@ const SplashScreen = ({ onComplete }: SplashScreenProps) => {
               animate={{ opacity: 1 }}
               transition={{ delay: 0.7, duration: 0.8 }}
             >
-              للمأكولات البحرية
+              Maharel Kalij
             </motion.p>
             <Waves className="w-6 h-6 text-accent" />
           </div>

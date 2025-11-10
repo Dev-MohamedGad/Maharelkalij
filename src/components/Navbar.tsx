@@ -30,10 +30,10 @@ const Navbar = () => {
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-16">
           <div className="flex items-center gap-3">
-            <img src={logo} alt="نجمة السمك" className="w-10 h-10 rounded-full object-cover" />
+            <img src={logo} alt="مؤسسة محار الخليج" className="w-10 h-10 rounded-full object-cover" />
             <div className="hidden md:block">
-              <h2 className="font-bold text-lg text-primary">نجمة السمك</h2>
-              <p className="text-xs text-muted-foreground">للمأكولات البحرية</p>
+              <h2 className="font-bold text-lg text-primary">مؤسسة محار الخليج</h2>
+              <p className="text-xs text-muted-foreground">Maharel Kalij</p>
             </div>
           </div>
 

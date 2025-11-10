@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import { useInView } from "framer-motion";
 import { useRef } from "react";
-import freshFishImage from "@/assets/fresh-fish.jpg";
+import freshFishImage from "@/assets/image-1.jpeg";
 
 const AboutSection = () => {
   const ref = useRef(null);
@@ -45,7 +45,7 @@ const AboutSection = () => {
             className="space-y-6"
           >
             <p className="text-lg leading-relaxed text-foreground">
-              في <span className="font-bold text-primary">نجمة السمك</span>، نقدم أشهى المأكولات البحرية الطازجة المحضّرة بأعلى جودة وبأيدي طهاة محترفين.
+              في <span className="font-bold text-primary">مؤسسة محار الخليج</span>، نقدم أشهى المأكولات البحرية الطازجة المحضّرة بأعلى جودة وبأيدي طهاة محترفين.
             </p>
             <p className="text-lg leading-relaxed text-foreground">
               نحرص على اختيار أجود أنواع الأسماك والمأكولات البحرية يومياً، لنضمن لكم تجربة طعام لا تُنسى تجمع بين النكهة الأصيلة والجودة العالية.

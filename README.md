@@ -1,8 +1,10 @@
-# Welcome to your Lovable project
+# مؤسسة محار الخليج - Maharel Kalij
 
-## Project info
+## معلومات المشروع - Project Info
 
-**URL**: https://lovable.dev/projects/44a06678-8bb4-4612-a96e-ad04760bd514
+**الاسم**: مؤسسة محار الخليج - Maharel Kalij Seafood  
+**الهاتف/واتساب**: +966 54 517 3492  
+**الموقع**: [خريطة Google](https://maps.app.goo.gl/DRKFq4v6zqJCEHX67)
 
 ## How can I edit this code?
 
