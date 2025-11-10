@@ -3,68 +3,62 @@ import { useInView } from "framer-motion";
 import { useRef } from "react";
 import { Card, CardContent } from "@/components/ui/card";
 import image1 from "@/assets/image-1.jpeg";
-import image2 from "@/assets/image-2.jpeg";
 import image3 from "@/assets/image-3.jpeg";
 import image4 from "@/assets/image-4.jpeg";
-import image5 from "@/assets/image-5.jpeg";
+import image23 from "@/assets/image-23.jpeg";
 import image6 from "@/assets/image-6.jpeg";
 import image7 from "@/assets/image-7.jpeg";
 import image8 from "@/assets/image-8.jpeg";
+import image30 from "@/assets/image-30.jpeg";
 import image9 from "@/assets/image-9.jpeg";
 import image10 from "@/assets/image-10.jpeg";
 
 const menuItems = [
   {
     id: 1,
-    name: "سمك هامور طازج",
-    description: "سمك هامور طازج من الخليج، يتميز بجودته العالية وطعمه المميز",
+    name: "مشكل الأسماك الطازجة"  ,  
+    description: "مشكل الأسماك الطازجة من الخليج، يتميز بجودته العالية وطعمه المميز",
     image: image1,
   },
   {
-    id: 2,
-    name: "سمك زبيدي طازج",
-    description: "سمك زبيدي طازج من الخليج، يتميز بجودته العالية وطعمه المميز",
-    image: image2,
-  },
-  {
     id: 3,
-    name: "سمك صافي طازج",
-    description: "سمك صافي طازج من الخليج، يتميز بنضارته وجودته العالية",
+    name: "سمك كنعد طازج",
+    description: "سمك كنعد طازج من الخليج، منتقى من أفضل الأنواع المتوفرة",
     image: image3,
   },
   {
     id: 4,
-    name: "مشكل الأسماك الطازجة",
-    description: "تشكيلة واسعة من أفضل أنواع الأسماك الطازجة من مياه الخليج",
+    name: "سمك شعور طازج ",
+    description: "سمك شعور طازج من الخليج، يتميز بجودته العالية وطعمه المميز",
     image: image4,
   },
   {
     id: 5,
-    name: "سمك كنعد طازج",
-    description: "سمك كنعد طازج من الخليج، منتقى من أفضل الأنواع المتوفرة",
-    image: image5,
+    name: "جمبري طازج",
+    description: "جمبري طازج من الخليج، يتميز بجودته العالية وطعمه المميز",
+    image: image23,
   },
   {
     id: 6,
-    name: "سمك ناجل طازج",
-    description: "سمك ناجل طازج من الخليج، يتميز بجودته العالية وطعمه المميز",
+    name: "سمك هامور بالون طازج ",
+    description: "سمك هامور بالون طازج من الخليج، يتميز بجودته العالية وطعمه المميز",
     image: image6,
   },
   {
     id: 7,
-    name: "سمك بياض طازج",
-    description: "سمك بياض طازج من مياه الخليج، يتميز بجودته العالية وطعمه المميز",
+    name: "اجود انواع الهامور الطازجة",
+    description: "اجود انواع الهامور الطازجة من مياه الخليج، يتميز بجودته العالية وطعمه المميز",
     image: image7,
   },
   {
     id: 8,
-    name: "جمبري الخليج الطازج",
-    description: "جمبري طازج من الخليج، منتقى من أفضل الأنواع المتوفرة",
-    image: image8,
+    name: "سمك ناجل اصلي طازج",
+    description: "سمك ناجل أصلي طازج من الخليج، منتقى بعناية لضمان أعلى جودة",
+    image: image30,
   },
   {
     id: 9,
-    name: "سمك شعري طازج",
+    name: "سمك حمرا طازج  ",
     description: "سمك شعري طازج من مياه الخليج، يتميز بجودته العالية وطعمه المميز",
     image: image9,
   },

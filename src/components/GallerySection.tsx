@@ -39,9 +39,9 @@ type ImageItem = {
 const galleryImages: ImageItem[] = [
   { id: 1, src: image1, alt: "أسماك الخليج الطازجة" },
   { id: 2, src: image2, alt: "سمك هامور طازج" },
-  { id: 3, src: image3, alt: "سمك زبيدي طازج" },
+  { id: 3, src: image3, alt: "جمبري طازج" },
   { id: 4, src: image4, alt: "مشكل الأسماك الطازجة" },
-  { id: 5, src: image5, alt: "سمك صافي طازج" },
+  { id: 5, src: image5, alt: "سمك كنعد طازج" },
   { id: 6, src: image6, alt: "جمبري وأسماك طازجة" },
   { id: 7, src: image7, alt: "سمك شعري طازج" },
   { id: 8, src: image8, alt: "سمك كنعد طازج" },
