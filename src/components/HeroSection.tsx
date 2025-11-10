@@ -38,7 +38,7 @@ const HeroSection = () => {
             onClick={() => scrollToSection("#menu")}
             className="bg-white text-primary font-bold text-lg px-8 py-6 rounded-full shadow-2xl hover:shadow-3xl hover:bg-white/95 transition-all hover:scale-105 border-2 border-white"
           >
-            قائمة الطعام
+            أنواع الأسماك
           </Button>
           <Button
             size="lg"

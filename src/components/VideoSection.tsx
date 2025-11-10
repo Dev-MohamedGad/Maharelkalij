@@ -2,15 +2,9 @@ import { motion } from "framer-motion";
 import { useInView } from "framer-motion";
 import { useRef, useState } from "react";
 import { Play, Pause } from "lucide-react";
-import video1 from "@/assets/video1.mp4";
-import video2 from "@/assets/video2.mp4";
-import video3 from "@/assets/video3.mp4";
 import videoDash1 from "@/assets/video-1.mp4";
 import videoDash2 from "@/assets/video-2.mp4";
 import videoDash3 from "@/assets/video-3.mp4";
-import video5 from "@/assets/video-5.mp4";
-import video7 from "@/assets/video-7.mp4";
-import video8 from "@/assets/video-8.mp4";
 
 type VideoItem = {
   id: number;
@@ -19,17 +13,10 @@ type VideoItem = {
 };
 
 const videoItems: VideoItem[] = [
-  { id: 1, src: video1, title: "فيديو المأكولات البحرية" },
-  { id: 2, src: video2, title: "فيديو الطهي" },
-  { id: 3, src: video3, title: "فيديو العرض" },
-  { id: 4, src: videoDash1, title: "فيديو المطبخ" },
-  { id: 5, src: videoDash2, title: "فيديو الطهي الاحترافي" },
-  { id: 6, src: videoDash3, title: "فيديو المأكولات البحرية" },
-  { id: 7, src: video5, title: "فيديو العرض المميز" },
-  { id: 8, src: video7, title: "فيديو الطهي الفاخر" },
-  { id: 9, src: video8, title: "فيديو المأكولات الطازجة" },
-];
-
+  { id: 1, src: videoDash1, title: "فيديو المأكولات البحرية" },
+  { id: 2, src: videoDash2, title: "فيديو الطهي الاحترافي" },
+  { id: 3, src: videoDash3, title: "فيديو المأكولات البحرية" },
+]
 const VideoSection = () => {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true, amount: 0.2 });

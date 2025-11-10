@@ -45,13 +45,13 @@ const AboutSection = () => {
             className="space-y-6"
           >
             <p className="text-lg leading-relaxed text-foreground">
-              في <span className="font-bold text-primary">مؤسسة محار الخليج</span>، نقدم أشهى المأكولات البحرية الطازجة المحضّرة بأعلى جودة وبأيدي طهاة محترفين.
+              في <span className="font-bold text-primary">مؤسسة محار الخليج</span>، نختص في حفظ وتخزين الأسماك والمأكولات البحرية الطازجة في ثلاجات محكمة الإغلاق، لضمان الحفاظ على جودتها ونضارتها.
             </p>
             <p className="text-lg leading-relaxed text-foreground">
-              نحرص على اختيار أجود أنواع الأسماك والمأكولات البحرية يومياً، لنضمن لكم تجربة طعام لا تُنسى تجمع بين النكهة الأصيلة والجودة العالية.
+              نحرص على اختيار أجود أنواع الأسماك والمأكولات البحرية يومياً من مياه الخليج العربي، ونحفظها في ثلاجات متخصصة بدرجات حرارة مثالية لضمان الطزاجة والجودة العالية.
             </p>
             <p className="text-lg leading-relaxed text-foreground">
-              مطعمنا هو وجهتكم المثالية للاستمتاع بأطباق بحرية شهية في أجواء راقية ومريحة.
+              متجرنا هو وجهتكم المثالية للحصول على أسماك طازجة محفوظة بشكل صحيح، مع ضمان الجودة والنضارة في كل منتج.
             </p>
             <div className="pt-4 flex gap-8">
               <div className="text-center">
@@ -59,12 +59,12 @@ const AboutSection = () => {
                 <div className="text-muted-foreground">سنوات خبرة</div>
               </div>
               <div className="text-center">
-                <div className="text-4xl font-bold text-secondary mb-2">50+</div>
-                <div className="text-muted-foreground">طبق مميز</div>
+                <div className="text-4xl font-bold text-secondary mb-2">30+</div>
+                <div className="text-muted-foreground">نوع من الأسماك</div>
               </div>
               <div className="text-center">
                 <div className="text-4xl font-bold text-secondary mb-2">1000+</div>
-                <div className="text-muted-foreground">عميل سعيد</div>
+                <div className="text-muted-foreground">عميل راضٍ</div>
               </div>
             </div>
           </motion.div>

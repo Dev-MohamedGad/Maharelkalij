@@ -11,7 +11,7 @@ const Navbar = () => {
   const menuItems = [
     { label: "الرئيسية", href: "#hero" },
     { label: "من نحن", href: "#about" },
-    { label: "قائمة الطعام", href: "#menu" },
+    { label: "أنواع الأسماك", href: "#menu" },
     { label: "معرض الصور", href: "#gallery" },
     { label: "الفيديوهات", href: "#videos" },
     { label: "تواصل معنا", href: "#contact" },

@@ -37,10 +37,6 @@ type ImageItem = {
 };
 
 const galleryImages: ImageItem[] = [
-  { id: 1, src: image1, alt: "مأكولات بحرية طازجة" },
-  { id: 2, src: image2, alt: "سمك مشوي" },
-  { id: 3, src: image3, alt: "جمبري مقلي" },
-  { id: 4, src: image4, alt: "أرز بالمأكولات البحرية" },
   { id: 5, src: image5, alt: "مأكولات بحرية فاخرة" },
   { id: 6, src: image6, alt: "سمك طازج" },
   { id: 7, src: image7, alt: "مأكولات بحرية متنوعة" },
@@ -51,7 +47,6 @@ const galleryImages: ImageItem[] = [
   { id: 12, src: image12, alt: "مأكولات بحرية شهية" },
   { id: 13, src: image13, alt: "أطباق بحرية متنوعة" },
   { id: 14, src: image14, alt: "مأكولات بحرية طازجة" },
-  { id: 15, src: image15, alt: "سمك مشوي مع الخضار" },
   { id: 16, src: image16, alt: "مأكولات بحرية فاخرة" },
   { id: 17, src: image17, alt: "طبق بحري مميز" },
   { id: 18, src: image18, alt: "مأكولات بحرية طازجة" },
@@ -59,7 +54,6 @@ const galleryImages: ImageItem[] = [
   { id: 20, src: image20, alt: "مأكولات بحرية متنوعة" },
   { id: 21, src: image21, alt: "أطباق بحرية شهية" },
   { id: 22, src: image22, alt: "مأكولات بحرية طازجة" },
-  { id: 23, src: image23, alt: "سمك مشوي على الفحم" },
   { id: 24, src: image25, alt: "مأكولات بحرية فاخرة" },
   { id: 25, src: image26, alt: "طبق بحري مميز" },
   { id: 26, src: image27, alt: "مأكولات بحرية طازجة" },
@@ -88,32 +82,7 @@ const GallerySection = () => {
           </p>
         </motion.div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 max-w-7xl mx-auto">
-          {galleryImages.map((image, index) => (
-            <motion.div
-              key={image.id}
-              initial={{ opacity: 0, scale: 0.9 }}
-              animate={isInView ? { opacity: 1, scale: 1 } : {}}
-              transition={{ duration: 0.5, delay: index * 0.05 }}
-              className="relative group overflow-hidden rounded-2xl shadow-lg cursor-pointer aspect-square"
-            >
-              <img
-                src={image.src}
-                alt={image.alt}
-                className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
-                loading="lazy"
-              />
-              <div className="absolute top-2 right-2 bg-black/50 backdrop-blur-sm rounded-full p-2 opacity-0 group-hover:opacity-100 transition-opacity">
-                <ImageIcon className="w-4 h-4 text-white" />
-              </div>
-              <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end justify-center pb-4 px-3">
-                <p className="text-white font-semibold text-sm text-center drop-shadow-lg">
-                  {image.alt}
-                </p>
-              </div>
-            </motion.div>
-          ))}
-        </div>
+      
       </div>
     </section>
   );

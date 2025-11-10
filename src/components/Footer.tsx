@@ -31,7 +31,7 @@ const Footer = () => {
 
           <div className="text-center md:text-left">
             <p className="text-primary-foreground/90 leading-relaxed">
-              نقدم أشهى المأكولات البحرية الطازجة بأعلى جودة في أجواء راقية ومريحة
+              نقدم أجود أنواع الأسماك والمأكولات البحرية الطازجة محفوظة في ثلاجات متخصصة بجودة عالية
             </p>
           </div>
         </div>
